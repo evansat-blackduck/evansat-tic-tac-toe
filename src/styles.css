@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#root {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+#game-controls {
+  margin-bottom: 20px;
+}
+
+select, button {
+  margin: 5px;
+  padding: 5px 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#game-board {
+  display: inline-grid;
+  gap: 2px; /* Reduce the gap between cells */
+  background-color: #ccc;
+  padding: 2px; /* Reduce padding to match the smaller gap */
+  margin-bottom: 20px;
+}
+
+.cell {
+  width: 60px; /* Increase the width of each cell */
+  height: 60px; /* Increase the height of each cell */
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell:hover {
+  background-color: #f0f0f0;
+}
+
+#game-status {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@media (max-width: 600px) {
+  #root {
+    padding: 10px;
+  }
+
+  select, button {
+    font-size: 14px;
+  }
+
+  .cell {
+    width: 50px; /* Adjust for smaller screens */
+    height: 50px;
+    font-size: 20px;
+  }
+}
